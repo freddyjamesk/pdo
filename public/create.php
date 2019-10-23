@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
 
   try  {
     $connection = new PDO($dsn, $username, $password, $options);
-    
+
     $new_user = array(
       "firstname" => $_POST['firstname'],
       "lastname"  => $_POST['lastname'],
@@ -29,7 +29,7 @@ if (isset($_POST['submit'])) {
       implode(", ", array_keys($new_user)),
       ":" . implode(", :", array_keys($new_user))
     );
-    
+
     $statement = $connection->prepare($sql);
     $statement->execute($new_user);
   } catch(PDOException $error) {
@@ -51,9 +51,10 @@ if (isset($_POST['submit'])) {
     <input type="text" name="firstname" id="firstname">
     <label for="lastname">Last Name</label>
     <input type="text" name="lastname" id="lastname">
-    <label for="email">Email Address</label>
+    <label for="email">Nice Comment</label>
     <input type="text" name="email" id="email">
-    <label for="age">Age</label>
+    <label for="age">Satisfaction. How do you like the lecture?</label>
+    <a>1-10</a>
     <input type="text" name="age" id="age">
     <label for="location">Location</label>
     <input type="text" name="location" id="location">
