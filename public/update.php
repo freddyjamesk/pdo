@@ -21,7 +21,7 @@ try {
 }
 ?>
 <?php require "templates/header.php"; ?>
-        
+
 <h2>Update users</h2>
 
 <table>
@@ -30,8 +30,8 @@ try {
             <th>#</th>
             <th>First Name</th>
             <th>Last Name</th>
-            <th>Email Address</th>
-            <th>Age</th>
+            <th>Nice Comment</th>
+            <th>Satisfaction</th>
             <th>Location</th>
             <th>Date</th>
             <th>Edit</th>

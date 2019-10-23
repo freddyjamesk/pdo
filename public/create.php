@@ -56,7 +56,7 @@ if (isset($_POST['submit'])) {
     <label for="age">Satisfaction. How do you like the lecture?</label>
     <a>1-10</a>
     <input type="text" name="age" id="age">
-    <label for="location">Location</label>
+    <label for="location">Location. Please write "Jelgavas Tehnikums"!</label>
     <input type="text" name="location" id="location">
     <input type="submit" name="submit" value="Submit">
   </form>
